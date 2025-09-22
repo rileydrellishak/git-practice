@@ -9,6 +9,12 @@ def max_value(numbers):
             max_value = number
     
     return max_value
+    return max(numbers)
+    previous_num = 0
+    for num in numbers:
+        if num > previous_num:
+            num = previous_num
+    return num
 
 
 if __name__ == "__main__":
